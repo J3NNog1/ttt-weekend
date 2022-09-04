@@ -12,9 +12,7 @@
 
   // 1c) Use a variable named `winner` to represent if anyone has won yet, or 
   //    if a tie has occurred.
-  let board
-  let turn 
-  let winner 
+  let board, turn, winner
 
 
 /*------------------------ Cached Element References ------------------------*/
@@ -61,18 +59,7 @@ function init () {
   render()
 }
 // console.log(init)
-function render() {
-  board.forEach((square,idx) => {
-  const playerChoice = squareEls[index]
-  if (square === -1) {
-    squareEls[idx].textContent = 'O'
-  } else if (square === 1) {
-    squareEls[idx].textContent = 'X'
-  }else {
-    squareEls[idx].textContent = ''
-  }
-  })
-}
+
 // Step 4 - The state of the game should be rendered to the user
 
   // 4a) Create a function called `render`.
@@ -92,11 +79,32 @@ function render() {
   //       won.
     
 
-function render() {
-
-
+  function render() {
+    board.forEach((square,idx) => {
+    const playerChoice = squareEls[index]
+    if (square === -1) {
+      squareEls[idx].textContent = 'O'
+    } else if (square === 1) {
+      squareEls[idx].textContent = 'X'
+    }else {
+      squareEls[idx].textContent = ''
+    }
+    })
+  
+  if (winner === null) {
+    if(turn === 1) {
+      messageEl.textContent = "Player one it's your go!"
+    } else {
+      messageEl.textContent = "Player two it's your go!"
+    }
+  } else if (winner === 'T') {
+    messageEl.textContent = "It's a Tie!"
+  } else if (winner === 1) {
+    messageEl.textContent = "Congratulations, player one wins!"
+  } else if (winner === -1) {
+    messageEl.textContent = "Congratulations, player two wins!"
+  }
 }
-
 
 
 
