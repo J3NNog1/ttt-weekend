@@ -53,7 +53,13 @@
 
   // 3f) Call a function called `render` at the end of the `init` function.
 
-
+init ()
+function init () {
+  board = [null, null, null, null, null, null, null, null, null,]
+  turn = 1
+  winner = null
+  render()
+}
 
 
 
