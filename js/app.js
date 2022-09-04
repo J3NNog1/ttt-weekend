@@ -60,23 +60,20 @@ function init () {
   winner = null
   render()
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  // Step 4 - The state of the game should be rendered to the user
+// console.log(init)
+function render() {
+  board.forEach((square,idx) => {
+  const playerChoice = squareEls[index]
+  if (square === -1) {
+    squareEls[idx].textContent = 'O'
+  } else if (square === 1) {
+    squareEls[idx].textContent = 'X'
+  }else {
+    squareEls[idx].textContent = ''
+  }
+  })
+}
+// Step 4 - The state of the game should be rendered to the user
 
   // 4a) Create a function called `render`.
 
@@ -94,6 +91,29 @@ function init () {
   //     - Otherwise, render a congratulatory message to the player that has 
   //       won.
     
+
+function render() {
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
 
 // Step 5 - Define the required constants
 
