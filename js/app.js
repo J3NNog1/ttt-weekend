@@ -12,20 +12,12 @@
 
   // 1c) Use a variable named `winner` to represent if anyone has won yet, or 
   //    if a tie has occurred.
-  let board, turn, winner
+  let board
+  let turn 
+  let winner 
 
 
 /*------------------------ Cached Element References ------------------------*/
-
-
-
-/*----------------------------- Event Listeners -----------------------------*/
-
-
-
-/*-------------------------------- Functions --------------------------------*/
-
-
 
 // Step 2 - Store cached element references
 
@@ -34,8 +26,17 @@
 
   // 2b) In a constant called `messageEl`, store the element that displays the 
   //    game's status on the page.
+  const squareEls = document.querySelector('section.board')
+  // console.log(squareEls)
+  const messageEl = document.querySelector('#message')
+  // console.log(messageEl)
 
 
+/*----------------------------- Event Listeners -----------------------------*/
+
+
+
+/*-------------------------------- Functions --------------------------------*/
 // Step 3 - Upon loading, the game state should be initialized, and a function 
 //          should be called to render this game state
 
@@ -52,7 +53,24 @@
 
   // 3f) Call a function called `render` at the end of the `init` function.
 
-// Step 4 - The state of the game should be rendered to the user
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // Step 4 - The state of the game should be rendered to the user
 
   // 4a) Create a function called `render`.
 
