@@ -26,7 +26,7 @@ const winningCombos = [
 
   // 2b) In a constant called `messageEl`, store the element that displays the 
   //    game's status on the page.
-  const squareEls = document.querySelectorAll(".board-space")
+  const squareEls = document.querySelectorAll("section > div")
   // console.log(squareEls)
   const messageEl = document.querySelector('#message')
   // console.log(messageEl)
