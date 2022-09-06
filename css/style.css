@@ -24,3 +24,8 @@ div {
   vertical-align: middle;
   
 }
+#reset-button {
+  margin: 20px;
+  width: 100px
+}
+
